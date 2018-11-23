@@ -17,24 +17,24 @@
     <div class="header__top logo">
       <div class="logo__container">
         <a class="logo__link"><img src="/img/" width="100" height="100"></a>
-        <h2 class="logo__company-name"></h2>
-        <p class="logo__description"></p>
+        <h2 class="logo__company-name">Название компании</h2>
+        <p class="logo__description">самая клевая компания</p>
       </div>
       <div class="header__contacts">
         <ul class="header__contacts-list">
-          <li class="header__contacts-item"></li>
-          <li class="header__contacts-item"></li>
+          <li class="header__contacts-item">+7(499) 777-77-77</li>
+          <li class="header__contacts-item">+7(499) 777-77-77</li>
         </ul>
-        <a class="header__feedback"></a>
+        <a class="header__feedback">Обратная связь</a>
       </div>
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__list-item"></li>
-        <li class="main-nav__list-item"></li>
-        <li class="main-nav__list-item"></li>
-        <li class="main-nav__list-item"></li>
-        <li class="main-nav__list-item"></li>
+        <li class="main-nav__list-item">Главная</li>
+        <li class="main-nav__list-item">Каталог</li>
+        <li class="main-nav__list-item main-nav__list-item--active">Доставка и оплата</li>
+        <li class="main-nav__list-item">Прайс-лист</li>
+        <li class="main-nav__list-item">Контакты</li>
       </ul>
     </nav>
     <div class="slider">
@@ -47,74 +47,104 @@
     </div>
   </header>
   <main class="catalog">
+    <h1 class="catalog__title visually-hidden">Раздел каталога - бытовая техника</h1>
     <ul class="catalog__list breadcrumbs">
-      <li class="breadcrumbs__item"></li>
-      <li class="breadcrumbs__item"></li>
-      <li class="breadcrumbs__item"></li>
+      <li class="breadcrumbs__item">Главная</li>
+      <li class="breadcrumbs__item">Каталог</li>
+      <li class="breadcrumbs__item breadcrumbs__item--active">Бытовая техника</li>
     </ul>
     <div class="catalog__blocks content">
       <aside class="catalog__leftblock">
         <ul class="catalog__list">
-          <li class="catalog__list-item category">
+          <li class="catalog__list-item">Автомобили</li>
+          <li class="catalog__list-item category category--active">Бытовая техника
             <ul class="category__list">
-              <li class="category__item"></li>
-              <li class="category__item"></li>
-              <li class="category__item"></li>
-              <li class="category__item"></li>
+              <li class="category__item category__item--active">Микроволновки</li>
+              <li class="category__item">Холодильники</li>
+              <li class="category__item">Посудомоечные машины</li>
+              <li class="category__item">Чайники</li>
             </ul>
           </li>
-          <li class="catalog__list-item"></li>
-          <li class="catalog__list-item"></li>
-          <li class="catalog__list-item"></li>
-          <li class="catalog__list-item"></li>
-          <li class="catalog__list-item"></li>
+          <li class="catalog__list-item">Мобильная техника</li>
+          <li class="catalog__list-item">Компьютеры</li>
+          <li class="catalog__list-item">Одежда</li>
+          <li class="catalog__list-item">Недвижимость</li>
         </ul>
-        <div class="catalog__price"></div>
+        <div class="catalog__price">
+          <a href="" download=""><img src="" alt="" width="97" height="111" title="Скачать прайс-лист"></a>
+          <p>Прайс-лист</p>
+        </div>
       </aside>
       <div class="catalog__centerblock">
         <ul class="catalog__products-list">
-          <li class="ccatalog__products-item product">
+          <li class="catalog__products-item product">
             <img class="product__image" src="" alt="" width="" height="">
-            <p class="product__name"></p>
-            <p class="product__price"></p>
+            <p class="product__name">Самый клевый чайник, который надо купить!</p>
+            <p class="product__price">1900 р.</p>
           </li>
-          <li class="ccatalog__products-item"></li>
-          <li class="ccatalog__products-item"></li>
-          <li class="ccatalog__products-item"></li>
-          <li class="ccatalog__products-item"></li>
+          <li class="catalog__products-item">
+            <img class="product__image" src="" alt="" width="" height="">
+            <p class="product__name">Самый клевый чайник, который надо купить!</p>
+            <p class="product__price">1900 р.</p>
+          </li>
+          <li class="catalog__products-item">
+            <img class="product__image" src="" alt="" width="" height="">
+            <p class="product__name">Самый клевый чайник, который надо купить!</p>
+            <p class="product__price">1900 р.</p>
+          </li>
+          <li class="catalog__products-item">
+            <img class="product__image" src="" alt="" width="" height="">
+            <p class="product__name">Самый клевый чайник, который надо купить!</p>
+            <p class="product__price">1900 р.</p>
+          </li>
+          <li class="catalog__products-item">
+            <img class="product__image" src="" alt="" width="" height="">
+            <p class="product__name">Самый клевый чайник, который надо купить!</p>
+            <p class="product__price">1900 р.</p>
+          </li>
         </ul>
         <ul class="catalog__pagination-list">
-          <li class="catalog__pagination-item"></li>
-          <li class="catalog__pagination-item"></li>
-          <li class="catalog__pagination-item"></li>
-          <li class="catalog__pagination-item"></li>
-          <li class="catalog__pagination-item"></li>
-          <li class="catalog__pagination-item"></li>
-          <li class="catalog__pagination-item"></li>
+          <li class="catalog__pagination-item">1</li>
+          <li class="catalog__pagination-item">2</li>
+          <li class="catalog__pagination-item catalog__pagination-item--active">3</li>
+          <li class="catalog__pagination-item">4</li>
+          <li class="catalog__pagination-item">5</li>
+          <li class="catalog__pagination-item">6</li>
+          <li class="catalog__pagination-item">7</li>
         </ul>
         <ul class="catalog__company-info features">
-          <li class="features__item"></li>
-          <li class="features__item"></li>
+          <li class="features__item">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </li>
+          <li class="features__item">Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</li>
         </ul>
       </div>
     </div>
   </main>
   <footer class="footer">
     <div class="footer__copyright">
-      <p class="footer__copyright-text"></p>
-      <p class="footer__email"></p>
+      <p class="footer__copyright-text">© 2012–2013 ЗАО «Компания»</p>
+      <p class="footer__email">info@name.ru</p>
     </div>
     <div class="footer__nav">
       <ul class="footer__nav-list">
-        <li class="footer__nav-item"></li>
-        <li class="footer__nav-item"></li>
-        <li class="footer__nav-item"></li>
-        <li class="footer__nav-item"></li>
-        <li class="footer__nav-item"></li>
+        <li class="footer__nav-item">Главная</li>
+        <li class="footer__nav-item">Каталог</li>
+        <li class="footer__nav-item">Доставка и оплата</li>
+        <li class="footer__nav-item">Прайс-лист</li>
+        <li class="footer__nav-item">Контакты</li>
       </ul>
     </div>
   </footer>
-  <div class="modal"></div>
+
+  <div class="modal">
+    <h2 class="modal__title">Обратная связь</h2>
+    <form action="">
+      <label>Ваше имя *<input type="text" class="modal__input" required></label>
+      <label>Телефон *<input type="tel" class="modal__input" required></label>
+      <label>Email *<input type="email" class="modal__input" required></label>
+      <label>Сообщение<textarea  class="modal__message" name="" id="" cols="30" rows="10"></textarea></label>
+      <input type="submit" name="" id="" value="Отправить">
+    </form>
+  </div>
 
 </body>
 
