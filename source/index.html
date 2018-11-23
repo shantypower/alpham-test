@@ -1,16 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alpham-test</title>
-    <link href="css/style.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="symbols">
-      <!-- inject:svg --><!-- endinject -->
-    </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alpham-test</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="symbols">
+    <!-- inject:svg -->
+    <!-- endinject -->
+  </div>
+  <header class="header">
+    <div class="header__top logo">
+      <div class="logo__container">
+        <a class="logo__link"><img src="/img/" width="100" height="100"></a>
+        <h2 class="logo__company-name"></h2>
+        <p class="logo__description"></p>
+      </div>
+      <div class="header__contacts">
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item"></li>
+          <li class="header__contacts-item"></li>
+        </ul>
+        <a class="header__feedback"></a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item"></li>
+        <li class="main-nav__list-item"></li>
+        <li class="main-nav__list-item"></li>
+        <li class="main-nav__list-item"></li>
+        <li class="main-nav__list-item"></li>
+      </ul>
+    </nav>
+    <div class="slider">
+      <ul slider__slides>
+        <li class="slider__slide"></li>
+        <li class="slider__slide"></li>
+      </ul>
+      <button class="slider__btn slider__btn--left"></button>
+      <button class="slider__btn slider__btn--right"></button>
+    </div>
+  </header>
+  <main class="catalog">
+    <ul class="catalog__list breadcrumbs">
+      <li class="breadcrumbs__item"></li>
+      <li class="breadcrumbs__item"></li>
+      <li class="breadcrumbs__item"></li>
+    </ul>
+    <div class="catalog__blocks content">
+      <aside class="catalog__leftblock">
+        <ul class="catalog__list">
+          <li class="catalog__list-item category">
+            <ul class="category__list">
+              <li class="category__item"></li>
+              <li class="category__item"></li>
+              <li class="category__item"></li>
+              <li class="category__item"></li>
+            </ul>
+          </li>
+          <li class="catalog__list-item"></li>
+          <li class="catalog__list-item"></li>
+          <li class="catalog__list-item"></li>
+          <li class="catalog__list-item"></li>
+          <li class="catalog__list-item"></li>
+        </ul>
+        <div class="catalog__price"></div>
+      </aside>
+      <div class="catalog__centerblock">
+        <ul class="catalog__products-list">
+          <li class="ccatalog__products-item product">
+            <img class="product__image" src="" alt="" width="" height="">
+            <p class="product__name"></p>
+            <p class="product__price"></p>
+          </li>
+          <li class="ccatalog__products-item"></li>
+          <li class="ccatalog__products-item"></li>
+          <li class="ccatalog__products-item"></li>
+          <li class="ccatalog__products-item"></li>
+        </ul>
+        <ul class="catalog__pagination-list">
+          <li class="catalog__pagination-item"></li>
+          <li class="catalog__pagination-item"></li>
+          <li class="catalog__pagination-item"></li>
+          <li class="catalog__pagination-item"></li>
+          <li class="catalog__pagination-item"></li>
+          <li class="catalog__pagination-item"></li>
+          <li class="catalog__pagination-item"></li>
+        </ul>
+        <ul class="catalog__company-info features">
+          <li class="features__item"></li>
+          <li class="features__item"></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p class="footer__copyright-text"></p>
+      <p class="footer__email"></p>
+    </div>
+    <div class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"></li>
+        <li class="footer__nav-item"></li>
+        <li class="footer__nav-item"></li>
+        <li class="footer__nav-item"></li>
+        <li class="footer__nav-item"></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="modal"></div>
+
+</body>
+
 </html>
