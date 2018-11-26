@@ -1,15 +1,25 @@
 .footer {
   background-color: $grey;
+  margin-top: 198px;
+  padding-top: 30px;
+  padding-bottom: 47px;
 
   &__nav-list {
     @include list-reset;
   }
 
+  &__copyright {
+    margin-right: 150px;
+  }
+
   &__copyright-text {
     color: $white;
+    margin-bottom: 0;
+    letter-spacing: 0.3px;
   }
 
   &__email {
+    margin: 0;
     a {
       color: $white;
     }
@@ -20,5 +30,15 @@
 
     a {
       color: $white;}
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__nav {
+    margin-top: 13px;
   }
 }

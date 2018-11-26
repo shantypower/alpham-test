@@ -7,6 +7,11 @@
     min-width: 199px;
   }
 
+  &__centerblock {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__price a {
     box-sizing: border-box;
     display: block;
@@ -50,17 +55,32 @@
     @include list-reset;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10px;
   }
 
   &__pagination-list {
     @include list-reset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 61px;
+    min-width: 176px;
   }
 
   &__pagination-item {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 21px;
     font-weight: normal;
+
+    &--active {
+      transform: scale(1.3);
+    }
 
     a {
       color: $grey-light;

@@ -636,6 +636,10 @@ font-family: 'Open Sans', sans-serif;*/
 .catalog__leftblock {
   min-width: 199px; }
 
+.catalog__centerblock {
+  display: flex;
+  flex-direction: column; }
+
 .catalog__price a {
   box-sizing: border-box;
   display: block;
@@ -675,18 +679,30 @@ font-family: 'Open Sans', sans-serif;*/
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 10px; }
 
 .catalog__pagination-list {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 61px;
+  min-width: 176px; }
 
 .catalog__pagination-item {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   font-weight: normal; }
+  .catalog__pagination-item--active {
+    transform: scale(1.3); }
   .catalog__pagination-item a {
     color: #767676; }
   .catalog__pagination-item--active a {
@@ -767,24 +783,50 @@ font-family: 'Open Sans', sans-serif;*/
     background: url("/img/cart.png"); }
 
 .footer {
-  background-color: #777777; }
+  background-color: #777777;
+  margin-top: 198px;
+  padding-top: 30px;
+  padding-bottom: 47px; }
   .footer__nav-list {
     list-style: none;
     margin: 0;
     padding: 0; }
+  .footer__copyright {
+    margin-right: 150px; }
   .footer__copyright-text {
-    color: #ffffff; }
-  .footer__email a {
-    color: #ffffff; }
+    color: #ffffff;
+    margin-bottom: 0;
+    letter-spacing: 0.3px; }
+  .footer__email {
+    margin: 0; }
+    .footer__email a {
+      color: #ffffff; }
   .footer__nav-item {
     line-height: 26px; }
     .footer__nav-item a {
       color: #ffffff; }
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .footer__nav {
+    margin-top: 13px; }
 
 .features {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #767676;
+  padding-top: 24px; }
+  .features__item {
+    width: 370px;
+    color: #767676;
+    letter-spacing: 0.3px;
+    margin-right: 41px; }
+  .features__item:nth-child(2n) {
+    margin-right: 0; }
 
 .modal {
   display: none; }
