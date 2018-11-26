@@ -577,7 +577,7 @@ font-family: 'Open Sans', sans-serif;*/
   margin: 0;
   padding: 0;
   padding: 6px 0;
-  margin-bottom: 16px; }
+  margin-bottom: 13px; }
   .breadcrumbs__item {
     position: relative;
     color: #767676;
@@ -638,7 +638,8 @@ font-family: 'Open Sans', sans-serif;*/
 
 .catalog__centerblock {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 3px; }
 
 .catalog__price a {
   box-sizing: border-box;
@@ -653,14 +654,14 @@ font-family: 'Open Sans', sans-serif;*/
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 95px; }
+  margin-bottom: 98px; }
   .catalog__list-item {
-    margin-bottom: 7px; }
+    margin-bottom: 8px; }
 
 .catalog__list-item a {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18.5px;
-  line-height: 20px;
+  line-height: 19px;
   font-weight: normal;
   color: #767676; }
 
@@ -740,9 +741,11 @@ font-family: 'Open Sans', sans-serif;*/
   .category__item a {
     display: block;
     font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14.5px;
+    font-size: 14.3px;
     line-height: 18px;
     font-weight: normal; }
+    .category__item a[href] {
+      text-decoration: none; }
     .category__item a::before {
       position: absolute;
       display: block;
@@ -800,11 +803,20 @@ font-family: 'Open Sans', sans-serif;*/
   .footer__email {
     margin: 0; }
     .footer__email a {
-      color: #ffffff; }
+      color: #ffffff;
+      letter-spacing: 0.3px; }
+  .footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start; }
   .footer__nav-item {
     line-height: 26px; }
     .footer__nav-item a {
-      color: #ffffff; }
+      display: block;
+      color: #ffffff;
+      margin-right: auto;
+      text-decoration: underline;
+      letter-spacing: 0.3px; }
   .footer__wrapper {
     display: flex;
     flex-direction: row;

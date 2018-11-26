@@ -22,14 +22,26 @@
     margin: 0;
     a {
       color: $white;
+      letter-spacing: 0.3px;
     }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
   }
 
   &__nav-item {
     line-height: 26px;
 
     a {
-      color: $white;}
+      display: block;
+      color: $white;
+      margin-right: auto;
+      text-decoration: underline;
+      letter-spacing: 0.3px;
+    }
   }
 
   &__wrapper {

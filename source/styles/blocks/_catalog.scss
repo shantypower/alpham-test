@@ -10,6 +10,7 @@
   &__centerblock {
     display: flex;
     flex-direction: column;
+    margin-top: 3px;
   }
 
   &__price a {
@@ -25,17 +26,17 @@
     align-items: flex-start;
 
       @include list-reset;
-      margin-bottom: 95px;
+      margin-bottom: 98px;
 
       &-item {
-        margin-bottom: 7px;
+        margin-bottom: 8px;
       }
   }
 
   &__list-item a {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18.5px;
-    line-height: 20px;
+    line-height: 19px;
     font-weight: normal;
     color: $grey-light;
   }

@@ -24,9 +24,13 @@
   &__item a {
     display: block;
     font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14.5px;
+    font-size: 14.3px;
     line-height: 18px;
     font-weight: normal;
+
+    &[href] {
+      text-decoration: none;
+    }
 
     &::before {
       position: absolute;
