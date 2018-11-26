@@ -1,17 +1,35 @@
 .product {
+
   &__name {
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 44px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 19px;
     font-weight: normal;
+    letter-spacing: 0.5px;
     color: $grey-light;
   }
 
   &__price {
+    margin-bottom: 0;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 28px;
     line-height: 42px;
     font-weight: bold;
     color: $grey-dark;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 21px;
+      bottom: 8px;
+      right: 16px;
+      background: url("/img/cart.png");
+    }
   }
+
 }

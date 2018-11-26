@@ -1,45 +1,93 @@
 .catalog {
-    &__list {
-        @include list-reset;
-    }
+  &__blocks {
+    display: flex;
+  }
 
-    &__list-item a {
-      font-family: "PT Sans", "Arial", sans-serif;
-      line-height: 20px;
-      font-weight: normal;
+  &__leftblock {
+    min-width: 199px;
+  }
+
+  &__price a {
+    box-sizing: border-box;
+    display: block;
+    margin-left: 42px;
+  }
+
+  &__list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+      @include list-reset;
+      margin-bottom: 95px;
+
+      &-item {
+        margin-bottom: 7px;
+      }
+  }
+
+  &__list-item a {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18.5px;
+    line-height: 20px;
+    font-weight: normal;
+    color: $grey-light;
+  }
+
+  &__price-text {
+    margin: 0;
+    margin-left: 13px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #444444;
+    letter-spacing: 0.5px;
+  }
+
+  &__products-list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__pagination-list {
+    @include list-reset;
+  }
+
+  &__pagination-item {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+
+    a {
       color: $grey-light;
     }
 
-    &__price-text {
-      font-family: "PT Sans", "Arial", sans-serif;
-      font-size: 30px;
-      line-height: 45px;
-      font-weight: bold;
-      color: #444444;
-    }
-
-    &__products-list {
-      @include list-reset;
-    }
-
-    &__pagination-list {
-      @include list-reset;
-    }
-
-    &__pagination-item {
-      font-family: "PT Sans", "Arial", sans-serif;
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: normal;
-
+    &--active {
       a {
-        color: $grey-light;
-      }
-
-      &--active {
-        a {
-          color: $black;
-        }
+        color: $black;
       }
     }
+  }
+
+  &__products-item {
+    padding: 20px;
+    padding-bottom: 9px;
+    width: 210px;
+    background-color: $header-color;
+    margin-right: 15px;
+    margin-bottom: 20px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    a {
+      position: relative;
+      display: block;
+    }
+  }
 }

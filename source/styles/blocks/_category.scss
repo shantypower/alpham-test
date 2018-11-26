@@ -1,16 +1,43 @@
 .category {
-  &__list {
-    @include list-reset;
+  position: relative;
+
+  &--active a {
+    text-decoration: underline;
   }
 
-  &__item a {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: normal;
+  &__list {
+    @include list-reset;
+    color: $grey-light;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 18px;
+    margin-bottom: 4px;
 
     &--active a {
       color: $black;
+      text-decoration: underline;
+    }
+  }
+
+  &__item a {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14.5px;
+    line-height: 18px;
+    font-weight: normal;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 4px;
+      width: 4px;
+      top: 9px;
+      left: -9px;
+      background-color: $grey-light;
+      border-radius: 50%;
     }
   }
 }

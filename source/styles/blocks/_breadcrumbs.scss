@@ -1,13 +1,14 @@
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+
+  @include list-reset;
   padding: 6px 0;
+  margin-bottom: 16px;
 
   &__item {
     position: relative;
     color: $grey-light;
-
-    @include list-reset;
     margin-right: 6px;
 
     &:nth-child(2n) {
@@ -20,7 +21,7 @@
       font-weight: normal;
       color: $grey-light;
 
-      &::before {
+      &[href]::before {
         position: absolute;
         display: block;
         content: "";

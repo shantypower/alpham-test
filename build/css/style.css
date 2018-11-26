@@ -573,13 +573,14 @@ font-family: 'Open Sans', sans-serif;*/
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  padding: 6px 0; }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 6px 0;
+  margin-bottom: 16px; }
   .breadcrumbs__item {
     position: relative;
     color: #767676;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     margin-right: 6px; }
     .breadcrumbs__item:nth-child(2n) {
       margin-right: 10px; }
@@ -589,7 +590,7 @@ font-family: 'Open Sans', sans-serif;*/
       line-height: 16px;
       font-weight: normal;
       color: #767676; }
-      .breadcrumbs__item a::before {
+      .breadcrumbs__item a[href]::before {
         position: absolute;
         display: block;
         content: "";
@@ -629,41 +630,52 @@ font-family: 'Open Sans', sans-serif;*/
     .slider__btn:hover {
       box-shadow: 5px 0 5px rgba(119, 119, 119, 0.5); }
 
-.category__list {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+.catalog__blocks {
+  display: flex; }
 
-.category__item a {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: normal; }
-  .category__item a--active a {
-    color: #000000; }
+.catalog__leftblock {
+  min-width: 199px; }
+
+.catalog__price a {
+  box-sizing: border-box;
+  display: block;
+  margin-left: 42px; }
 
 .catalog__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 95px; }
+  .catalog__list-item {
+    margin-bottom: 7px; }
 
 .catalog__list-item a {
   font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18.5px;
   line-height: 20px;
   font-weight: normal;
   color: #767676; }
 
 .catalog__price-text {
+  margin: 0;
+  margin-left: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
-  line-height: 45px;
+  line-height: 20px;
   font-weight: bold;
-  color: #444444; }
+  color: #444444;
+  letter-spacing: 0.5px; }
 
 .catalog__products-list {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; }
 
 .catalog__pagination-list {
   list-style: none;
@@ -680,19 +692,79 @@ font-family: 'Open Sans', sans-serif;*/
   .catalog__pagination-item--active a {
     color: #000000; }
 
+.catalog__products-item {
+  padding: 20px;
+  padding-bottom: 9px;
+  width: 210px;
+  background-color: #dcdcdc;
+  margin-right: 15px;
+  margin-bottom: 20px; }
+  .catalog__products-item:nth-child(3n) {
+    margin-right: 0; }
+  .catalog__products-item a {
+    position: relative;
+    display: block; }
+
+.category {
+  position: relative; }
+  .category--active a {
+    text-decoration: underline; }
+  .category__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #767676; }
+  .category__item {
+    position: relative;
+    margin-left: 18px;
+    margin-bottom: 4px; }
+    .category__item--active a {
+      color: #000000;
+      text-decoration: underline; }
+  .category__item a {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14.5px;
+    line-height: 18px;
+    font-weight: normal; }
+    .category__item a::before {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 4px;
+      width: 4px;
+      top: 9px;
+      left: -9px;
+      background-color: #767676;
+      border-radius: 50%; }
+
 .product__name {
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 44px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 19px;
   font-weight: normal;
+  letter-spacing: 0.5px;
   color: #767676; }
 
 .product__price {
+  margin-bottom: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 28px;
   line-height: 42px;
   font-weight: bold;
   color: #444444; }
+  .product__price::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 21px;
+    bottom: 8px;
+    right: 16px;
+    background: url("/img/cart.png"); }
 
 .footer {
   background-color: #777777; }
