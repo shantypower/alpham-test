@@ -16,14 +16,14 @@
   <header class="header">
     <div class="header__top logo">
       <div class="logo__container">
-        <a class="logo__link"><img src="/img/" width="100" height="100"></a>
+        <a class="logo__link"><img src="/img/" width="100" height="100" alt="Логотип компании"></a>
         <h2 class="logo__company-name">Название компании</h2>
         <p class="logo__description">самая клевая компания</p>
       </div>
       <div class="header__contacts">
         <ul class="header__contacts-list">
-          <li class="header__contacts-item"><a href="tel:+7(499) 777-77-77">+7(499) 777-77-77</a></li>
-          <li class="header__contacts-item"><a href="tel:+7(499) 777-77-77">+7(499) 777-77-77</a></li>
+          <li class="header__contacts-item"><a href="tel:+7(499) 7777777">+7(499)777-77-77</a></li>
+          <li class="header__contacts-item"><a href="tel:+7(499) 7777777">+7(499)777-77-77</a></li>
         </ul>
         <a class="header__feedback" href="#">Обратная связь</a>
       </div>
@@ -68,7 +68,7 @@
           <li class="catalog__list-item"><a href="#">Мобильная техника</a></li>
           <li class="catalog__list-item"><a href="#">Компьютеры</a></li>
           <li class="catalog__list-item"><a href="#">Одежда</a></li>
-          <li class="catalog__list-item"><a href="#">Недвижимость</a></li><a href="#">
+          <li class="catalog__list-item"><a href="#">Недвижимость</a></li>
         </ul>
         <div class="catalog__price">
           <a href="" download=""><img src="img/exel.png" alt="логотип MS-Exel" width="97" height="111" title="Скачать прайс-лист"></a>
@@ -123,8 +123,8 @@
           <li class="catalog__pagination-item"><a href="#">7</a></li>
         </ul>
         <ul class="catalog__company-info features">
-          <li class="features__item">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </li>
-          <li class="features__item">Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</li>
+          <li class="features__item">Компания &laquo;Пиксель Плюс&raquo; существует более 6&nbsp;лет, за&nbsp;это время мы&nbsp;принимали участие в&nbsp;разработке более чем 700&nbsp;сайтов, поэтому можем уверенно называть себя профессионалами. На&nbsp;данный момент наш коллектив состоит из&nbsp;более чем 30&nbsp;сотрудников работающих в&nbsp;двух офисах в&nbsp;Москве и&nbsp;Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.</li>
+          <li class="features__item">Одним из&nbsp;основных направлений работ нашей компании является поисковое продвижение сайтов, на&nbsp;данной момент мы&nbsp;работаем с&nbsp;более чем 150 постоянными клиентами по&nbsp;более чем 11&nbsp;000 поисковым запросам. При этом в&nbsp;работе основной акцент мы&nbsp;делаем на&nbsp;качестве работ, а&nbsp;так&nbsp;же применяем собственные уникальные разработки в&nbsp;области SEO продвижения. На&nbsp;данный момент отдел SEO состоит из&nbsp;9&nbsp;человек под руководством ведущего специалиста, преимущественно работающих в&nbsp;нашем московском офисе.</li>
         </ul>
       </div>
     </div>
@@ -148,11 +148,11 @@
   <div class="modal">
     <button class="modal__close"></button>
     <h2 class="modal__title">Обратная связь</h2>
-    <form class="modal__form" action="">
-      <label class="modal__label">Ваше имя *<input type="text" class="modal__input" required></label>
-      <label class="modal__label">Телефон *<input type="tel" class="modal__input" required></label>
-      <label class="modal__label">Email *<input type="email" class="modal__input" required></label>
-      <label class="modal__label">Сообщение<textarea  class="modal__message" name="" id="" cols="30" rows="10"></textarea></label>
+    <form class="modal__form" action="#" method="post">
+      <label class="modal__label">Ваше имя *<input type="text" class="modal__input" name="name" id="name-field" required></label>
+      <label class="modal__label">Телефон *<input type="tel" class="modal__input" name="phone" id="phone-field" required></label>
+      <label class="modal__label">Email *<input type="email" class="modal__input" name="email" id="email-field" required></label>
+      <label class="modal__label">Сообщение<textarea  class="modal__message" name="message" id="message-field" cols="30" rows="10"></textarea></label>
       <input type="submit" name="" id="" value="Отправить">
     </form>
   </div>
