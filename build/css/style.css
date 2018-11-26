@@ -580,10 +580,36 @@ font-family: 'Open Sans', sans-serif;*/
     font-weight: normal;
     color: #767676; }
 
-.slider__slides {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+.slider {
+  position: relative; }
+  .slider__slides {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .slider__slide {
+    min-width: 1400px;
+    min-height: 400px; }
+    .slider__slide:not(:first-child) {
+      display: none; }
+  .slider__slide img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .slider__btn {
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 155px;
+    width: 34px;
+    height: 61px;
+    background: url("/img/arrow.png"); }
+    .slider__btn--left {
+      left: 202px;
+      transform: rotate(180deg); }
+    .slider__btn--right {
+      right: 228px; }
+    .slider__btn:hover {
+      box-shadow: 5px 0 5px rgba(119, 119, 119, 0.5); }
 
 .category__list {
   list-style: none;
