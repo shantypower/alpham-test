@@ -1,4 +1,6 @@
 .header {
+  background-color: $header-color;
+
   &__contacts-item {
     @include list-reset;
 

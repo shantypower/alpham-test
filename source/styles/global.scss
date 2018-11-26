@@ -8,7 +8,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
-  color: $grey-light;
+  color: $white;
   background-color: $bg-color;
 }
 
@@ -29,6 +29,7 @@ img {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  width: 980px;
 }
 
 .visually-hidden {

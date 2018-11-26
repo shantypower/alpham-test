@@ -3,6 +3,7 @@
 
   &__list {
     @include list-reset;
+    @include margin-auto;
   }
 
   &__list-item a {
