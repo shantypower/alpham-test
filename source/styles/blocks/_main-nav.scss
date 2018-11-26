@@ -1,9 +1,28 @@
 .main-nav {
   background-color: $grey;
+  padding-bottom: 8px;
 
   &__list {
+    box-sizing: border-box;
     @include list-reset;
     @include margin-auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 13px 35px;
+  }
+
+  &__list-item:not(:last-child) {
+    position: relative;
+    margin-right: 43px;
+  }
+
+  &__list-item:nth-last-child(3) {
+    margin-right: 36px;
+  }
+
+  &__list-item:last-child a::after {
+    visibility: hidden;
   }
 
   &__list-item a {
@@ -12,6 +31,21 @@
     line-height: 46px;
     font-weight: normal;
     color: $white;
+    letter-spacing: 0.6px;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 2.5px;
+      height: 25px;
+      top: 13px;
+      right: -23px;
+      background-color: $white;
+    }
+
+    &::before
+
     &:hover {
     //border-bottom: 2px solid $white;
     }
