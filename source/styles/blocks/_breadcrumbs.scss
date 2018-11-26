@@ -1,11 +1,34 @@
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px 0;
+
   &__item {
+    position: relative;
+    color: $grey-light;
+
     @include list-reset;
+    margin-right: 6px;
+
+    &:nth-child(2n) {
+      margin-right: 10px;
+    }
     a {
+      display: block;
       font-family: "PT Sans", "Arial", sans-serif;
-      line-height: 18px;
+      line-height: 16px;
       font-weight: normal;
       color: $grey-light;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 1px;
+        top: 16px;
+        background-color: $grey-light;
+      }
     }
   }
 }
