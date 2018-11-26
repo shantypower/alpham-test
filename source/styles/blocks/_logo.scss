@@ -1,13 +1,14 @@
 .logo {
   &__company-name {
-    font-size: 40px;
-    line-height: 46px;
-    font-weight: normal;
+    font-family: "Myriad Pro", "Arial", sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: bold;
   }
 
   &__description {
-      font-size: 25px;
-      line-height: 32px;
+    font-family: "Myriad Pro", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 32px;
   }
 }
-  

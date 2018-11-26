@@ -1,0 +1,17 @@
+.product {
+  &__name {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: normal;
+    color: $grey-light;
+  }
+
+  &__price {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: bold;
+    color: $grey-dark;
+  }
+}

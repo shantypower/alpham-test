@@ -1,0 +1,16 @@
+.category {
+  &__list {
+    @include list-reset;
+  }
+
+  &__item a {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+
+    &--active a {
+      color: $black;
+    }
+  }
+}

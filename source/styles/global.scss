@@ -4,18 +4,25 @@ html {
 
 body {
   height: 100%;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
-  color: $brown-light;
+  color: $grey-light;
   background-color: $bg-color;
 }
 
+a {
+  text-decoration: none;
+  &[href] {
+    cursor: pointer;
+  }
+}
+/*
 img {
   width: 100%;
   height: auto;
-}
+}*/
 
 .container {
   position: relative;

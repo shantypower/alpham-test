@@ -1,0 +1,24 @@
+.footer {
+  background-color: $grey;
+
+  &__nav-list {
+    @include list-reset;
+  }
+
+  &__copyright-text {
+    color: $white;
+  }
+
+  &__email {
+    a {
+      color: $white;
+    }
+  }
+
+  &__nav-item {
+    line-height: 26px;
+
+    a {
+      color: $white;}
+  }
+}

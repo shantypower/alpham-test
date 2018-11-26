@@ -1,8 +1,11 @@
 .breadcrumbs {
   &__item {
     @include list-reset;
-    font-family: "PT Sans", "Arial", sans-serif;
-    line-height: 18px;
-    font-weight: normal;
+    a {
+      font-family: "PT Sans", "Arial", sans-serif;
+      line-height: 18px;
+      font-weight: normal;
+      color: $grey-light;
+    }
   }
 }

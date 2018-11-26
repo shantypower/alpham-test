@@ -1,15 +1,18 @@
 .main-nav {
-  background-color: $brown;
+  background-color: $grey;
 
   &__list {
     @include list-reset;
   }
 
-  &__list-item {
+  &__list-item a {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 30px;
     line-height: 46px;
     font-weight: normal;
     color: $white;
+    &:hover {
+    //border-bottom: 2px solid $white;
+    }
   }
 }

@@ -1,0 +1,45 @@
+.catalog {
+    &__list {
+        @include list-reset;
+    }
+
+    &__list-item a {
+      font-family: "PT Sans", "Arial", sans-serif;
+      line-height: 20px;
+      font-weight: normal;
+      color: $grey-light;
+    }
+
+    &__price-text {
+      font-family: "PT Sans", "Arial", sans-serif;
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: bold;
+      color: #444444;
+    }
+
+    &__products-list {
+      @include list-reset;
+    }
+
+    &__pagination-list {
+      @include list-reset;
+    }
+
+    &__pagination-item {
+      font-family: "PT Sans", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: normal;
+
+      a {
+        color: $grey-light;
+      }
+
+      &--active {
+        a {
+          color: $black;
+        }
+      }
+    }
+}

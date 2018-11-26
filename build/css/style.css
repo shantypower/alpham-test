@@ -407,17 +407,23 @@ html {
 
 body {
   height: 100%;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
   color: #767676;
   background-color: #ffffff; }
 
+a {
+  text-decoration: none; }
+  a[href] {
+    cursor: pointer; }
+
+/*
 img {
   width: 100%;
-  height: auto; }
-
+  height: auto;
+}*/
 .container {
   position: relative;
   margin: 0 auto;
@@ -469,29 +475,41 @@ font-family: 'Open Sans', sans-serif;*/
   font-weight: 300;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: local("MyriadPro-Regular"), url("/fonts/MyriadPro-Regular.woff2") format("woff2"), url("/fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .logo__company-name {
-  font-size: 40px;
-  line-height: 46px;
-  font-weight: normal; }
+  font-family: "Myriad Pro", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: bold; }
 
 .logo__description {
-  font-size: 25px;
+  font-family: "Myriad Pro", "Arial", sans-serif;
+  font-size: 18px;
   line-height: 32px; }
 
 .header__contacts-item {
   list-style: none;
   margin: 0;
-  padding: 0;
-  font-family: "Open Sans Condensed", 'Arial', sans-serif;
-  font-size: 40px;
-  line-height: 46px;
-  font-weight: 300; }
+  padding: 0; }
+  .header__contacts-item a {
+    font-family: "Open Sans Condensed", 'Arial', sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 300;
+    color: #767676; }
 
 .header__feedback {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 46px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #767676;
+  border-bottom: 2px dashed #767676; }
 
 .main-nav {
   background-color: #777777; }
@@ -499,7 +517,7 @@ font-family: 'Open Sans', sans-serif;*/
     list-style: none;
     margin: 0;
     padding: 0; }
-  .main-nav__list-item {
+  .main-nav__list-item a {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 30px;
     line-height: 46px;
@@ -509,12 +527,112 @@ font-family: 'Open Sans', sans-serif;*/
 .breadcrumbs__item {
   list-style: none;
   margin: 0;
-  padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 18px;
-  font-weight: normal; }
+  padding: 0; }
+  .breadcrumbs__item a {
+    font-family: "PT Sans", "Arial", sans-serif;
+    line-height: 18px;
+    font-weight: normal;
+    color: #767676; }
 
 .slider__slides {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.category__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.category__item a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal; }
+  .category__item a--active a {
+    color: #000000; }
+
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.catalog__list-item a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 20px;
+  font-weight: normal;
+  color: #767676; }
+
+.catalog__price-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #444444; }
+
+.catalog__products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.catalog__pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.catalog__pagination-item {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal; }
+  .catalog__pagination-item a {
+    color: #767676; }
+  .catalog__pagination-item--active a {
+    color: #000000; }
+
+.product__name {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: normal;
+  color: #767676; }
+
+.product__price {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #444444; }
+
+.footer {
+  background-color: #777777; }
+  .footer__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .footer__copyright-text {
+    color: #ffffff; }
+  .footer__email a {
+    color: #ffffff; }
+  .footer__nav-item {
+    line-height: 26px; }
+    .footer__nav-item a {
+      color: #ffffff; }
+
+.features {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.modal__title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #535353; }
+
+.modal__label {
+  color: #535353; }
+
+.modal__message {
+  resize: none; }
