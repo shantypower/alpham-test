@@ -451,45 +451,47 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(50, 50, 50, 0.3);
+  background-color: rgba(50, 50, 50, 0.6);
   z-index: 1;
   display: none; }
+  .overlay--visible {
+    display: block; }
 
 /*font-family: 'PT Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;*/
 @font-face {
   font-family: 'Open Sans';
-  src: local("/fonts/Open Sans Regular"), local("OpenSans-Regular"), rl("/fonts/OpenSans-Regular.woff2") format("woff2"), url("/fonts/OpenSans-Regular.woff") format("woff");
+  src: local("../fonts/Open Sans Regular"), local("OpenSans-Regular"), rl("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'PT Sans';
-  src: local("PT Sans Bold"), local("PTSans-Bold"), url("/fonts/PTSans-Bold.woff2") format("woff2"), url("/fonts/PTSans-Bold.woff") format("woff");
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'PT Sans';
-  src: local("PT Sans"), local("PTSans-Regular"), url("/fonts/PTSans-Regular.woff2") format("woff2"), url("/fonts/PTSans-Regular.woff") format("woff");
+  src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Open Sans';
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("/fonts/OpenSans-Bold.woff2") format("woff2"), url("/fonts/OpenSans-Bold.woff") format("woff");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Open Sans Condensed';
-  src: local("/fonts/Open Sans Condensed Light"), local("OpenSansCondensed-Light"), url("/fonts/OpenSansCondensed-Light.woff2") format("woff2"), url("/fonts/OpenSansCondensed-Light.woff") format("woff");
+  src: local("/fonts/Open Sans Condensed Light"), local("OpenSansCondensed-Light"), url("../fonts/OpenSansCondensed-Light.woff2") format("woff2"), url("../fonts/OpenSansCondensed-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Myriad Pro';
-  src: local("MyriadPro-Regular"), url("/fonts/MyriadPro-Regular.woff2") format("woff2"), url("/fonts/MyriadPro-Regular.woff") format("woff");
+  src: local("MyriadPro-Regular"), url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -632,7 +634,7 @@ font-family: 'Open Sans', sans-serif;*/
     top: 155px;
     width: 34px;
     height: 61px;
-    background: url("/img/arrow.png"); }
+    background: url("../img/arrow.png"); }
     .slider__btn--left {
       left: 202px;
       transform: rotate(180deg); }
@@ -794,7 +796,7 @@ font-family: 'Open Sans', sans-serif;*/
     height: 21px;
     bottom: 8px;
     right: 16px;
-    background: url("/img/cart.png"); }
+    background: url("../img/cart.png"); }
 
 .footer {
   background-color: #777777;
@@ -853,7 +855,7 @@ font-family: 'Open Sans', sans-serif;*/
 
 .modal {
   box-sizing: border-box;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   padding: 26px 64px;
@@ -911,8 +913,8 @@ font-family: 'Open Sans', sans-serif;*/
     line-height: 14px; }
   .modal__input:invalid {
     box-shadow: inset 0 0 20px rgba(228, 106, 106, 0.75);
-    border-color: rgba(228, 106, 106, 0.75);
-    border-width: 1px; }
+    border-width: 1px;
+    border-color: rgba(228, 106, 106, 0.75); }
   .modal__submit {
     margin-top: 21px;
     margin-left: auto;
@@ -926,3 +928,5 @@ font-family: 'Open Sans', sans-serif;*/
     text-transform: uppercase;
     background-color: #777777;
     border: 0; }
+  .modal--opened {
+    display: flex; }
