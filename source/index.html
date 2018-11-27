@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alpham-test</title>
   <link rel="stylesheet" type="text/css" href="lib/slick/slick.css" />
-  // Add the new slick-theme.css if you want the default styling
   <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css" />
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -19,8 +18,8 @@
       </div>
       <div class="header__contacts">
         <ul class="header__contacts-list">
-          <li class="header__contacts-item"><a href="tel:+7(499) 7777777">+7(499) 777-77-77</a></li>
-          <li class="header__contacts-item"><a href="tel:+7(499) 7777777">+7(499) 777-77-77</a></li>
+          <li class="header__contacts-item"><a href="tel:+7(499)7777777">+7(499) 777-77-77</a></li>
+          <li class="header__contacts-item"><a href="tel:+7(499)7777777">+7(499) 777-77-77</a></li>
         </ul>
         <a class="header__feedback" href="#">Обратная связь</a>
       </div>
@@ -41,8 +40,8 @@
         <li class="slider__slide"><img src="img/slide-1.jpg" alt="Слайд 1"></li>
         <li class="slider__slide"><img src="img/slide-2.jpg" alt="Слайд 2"></li>
       </ul>
-      <button class="slider__btn slider__btn--left"></button>
-      <button class="slider__btn slider__btn--right"></button>
+      <button class="slider__btn slider__btn--left" aria-label="Предыдущий слайд"></button>
+      <button class="slider__btn slider__btn--right" aria-label="Следующий слайд"></button>
     </div>
   </header>
 
@@ -81,35 +80,35 @@
         <ul class="catalog__products-list">
           <li class="catalog__products-item product">
             <a href="#">
-              <img class="product__image" src="img/nophoto.jpg" alt="" width="210" height="209">
+              <img class="product__image" src="img/nophoto.jpg" alt="Фото товара" width="210" height="209">
               <p class="product__name">Самый клевый чайник, который надо купить!</p>
               <p class="product__price">1&nbsp;900 р.</p>
             </a>
           </li>
           <li class="catalog__products-item product">
             <a href="#">
-              <img class="product__image" src="img/nophoto.jpg" alt="" width="210" height="209">
+              <img class="product__image" src="img/nophoto.jpg" alt="Фото товара" width="210" height="209">
               <p class="product__name">Самый клевый чайник, который надо купить!</p>
               <p class="product__price">1&nbsp;900 р.</p>
             </a>
           </li>
           <li class="catalog__products-item product">
             <a href="#">
-              <img class="product__image" src="img/nophoto.jpg" alt="" width="210" height="209">
+              <img class="product__image" src="img/nophoto.jpg" alt="Фото товара" width="210" height="209">
               <p class="product__name">Самый клевый чайник, который надо купить!</p>
               <p class="product__price">1&nbsp;900 р.</p>
             </a>
           </li>
           <li class="catalog__products-item product">
             <a href="#">
-              <img class="product__image" src="img/nophoto.jpg" alt="" width="210" height="209">
+              <img class="product__image" src="img/nophoto.jpg" alt="Фото товара" width="210" height="209">
               <p class="product__name">Самый клевый чайник, который надо купить!</p>
               <p class="product__price">1&nbsp;900 р.</p>
             </a>
           </li>
           <li class="catalog__products-item product">
             <a href="#">
-              <img class="product__image" src="img/nophoto.jpg" alt="" width="210" height="209">
+              <img class="product__image" src="img/nophoto.jpg" alt="Фото товара" width="210" height="209">
               <p class="product__name">Самый клевый чайник, который надо купить!</p>
               <p class="product__price">1&nbsp;900 р.</p>
             </a>
@@ -159,7 +158,7 @@
   </footer>
 
   <div class="modal">
-    <button class="modal__close"></button>
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
     <h2 class="modal__title">Обратная связь</h2>
     <form class="modal__form" action="#" method="post">
       <label class="modal__label">Ваше имя *<input type="text" class="modal__input" name="name" id="name-field"
@@ -170,14 +169,14 @@
           required></label>
       <label class="modal__label">Сообщение<textarea class="modal__message" name="message" id="message-field" cols="30"
           rows="8"></textarea></label>
-      <input class="modal__submit" type="submit" name="" id="" value="Отправить">
+      <input class="modal__submit" type="submit" value="Отправить">
     </form>
   </div>
   <div class="overlay"></div>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="lib/slick/slick.min.js"></script>
   <script src="js/evtKeyPress.min.js"></script>
   <script src="js/overlay.min.js"></script>
   <script src="js/modal.min.js"></script>
