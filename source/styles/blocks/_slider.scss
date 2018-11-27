@@ -7,10 +7,10 @@
   &__slide {
     min-width: 1400px;
     min-height: 400px;
-
+/*
     &:not(:first-child) {
       display: none;
-    }
+    }*/
   }
 
   &__slide img {
