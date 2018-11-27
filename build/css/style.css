@@ -457,6 +457,26 @@ img {
   .overlay--visible {
     display: block; }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  20% {
+    opacity: 0.2;
+    transform: scale(0.2); }
+  40% {
+    opacity: 0.4;
+    transform: scale(0.4); }
+  60% {
+    opacity: 0.6;
+    transform: scale(0.6); }
+  80% {
+    opacity: 0.8;
+    transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 /*font-family: 'PT Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;*/
 @font-face {
@@ -929,4 +949,6 @@ font-family: 'Open Sans', sans-serif;*/
     background-color: #777777;
     border: 0; }
   .modal--opened {
-    display: flex; }
+    display: flex;
+    animation: fade 0.5s ease-in-out;
+    animation-fill-mode: both; }
