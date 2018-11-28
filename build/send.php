@@ -10,13 +10,7 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $subject = "Форма отправки сообщений с сайта AlphaM";//Фиксированная тема письма
-  
 
-echo $first_name;
-echo "<br>";
-echo $email;
-ini_set('display_errors','On');
-error_reporting('E_ALL');
 /* Проверка правильного написания e-mail адреса */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
 {
@@ -43,5 +37,5 @@ $headers = "From: $from \r\n";
 <!--Переадресация на главную страницу сайта, через 3 секунды-->
 <script language="JavaScript" type="text/javascript">
 function changeurl(){eval(self.location="https://testmysiteru.000webhostapp.com");}
-window.setTimeout("changeurl();",3000);
+window.setTimeout("changeurl();",4000);
 </script>

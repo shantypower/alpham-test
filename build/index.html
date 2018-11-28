@@ -161,12 +161,12 @@
     <button class="modal__close" aria-label="Закрыть модальное окно"></button>
     <h2 class="modal__title">Обратная связь</h2>
     <form class="modal__form" action="send.php" method="post">
-      <label class="modal__label">Ваше имя *<input type="text" class="modal__input" name="name" id="name-field"
-          required></label>
-      <label class="modal__label">Телефон *<input type="tel" class="modal__input" name="phone" id="phone-field"
-          required></label>
-      <label class="modal__label">Email *<input type="email" class="modal__input" name="email" id="email-field"
-          required></label>
+      <label class="modal__label">Ваше имя *<input type="text" class="modal__input modal__input--name" name="name" id="name-field"
+          required autofocus aria-required="true" minlength="2" placeholder="" title="Имя должно содержать не менее 2 символов"></label>
+      <label class="modal__label">Телефон *<input type="tel" class="modal__input modal__input--phone" name="phone" id="phone-field"
+          required aria-required="true" title="Номер телефона в формате 8-xxx-xxx-xxxx" placeholder=""></label>
+      <label class="modal__label">Email *<input type="email" class="modal__input modal__input--email" name="email" id="email-field"
+          required aria-required="true" title="Пример ввода email: someone@nowhere.com" pattern="\S+@[a-z]+.[a-z]+" placeholder=""></label>
       <label class="modal__label">Сообщение<textarea class="modal__message" name="message" id="message-field" cols="30"
           rows="8"></textarea></label>
       <input class="modal__submit" type="submit" name="submit" value="Отправить">
@@ -176,11 +176,16 @@
 
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/additional-methods.js"></script>
+  <script src="lib/validation/messages_ru.min.js"></script>
+  <script src="lib/validation/jquery.mask.js"></script>
   <script src="lib/slick/slick.min.js"></script>
   <script src="js/evtKeyPress.min.js"></script>
   <script src="js/overlay.min.js"></script>
   <script src="js/modal.min.js"></script>
   <script src="js/slider.min.js"></script>
+  <script src="js/validation.min.js"></script>
 
 </body>
 

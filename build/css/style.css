@@ -457,6 +457,12 @@ img {
   .overlay--visible {
     display: block; }
 
+.error + span > label {
+  color: red; }
+
+.error + span {
+  margin-top: -15px; }
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -477,40 +483,40 @@ img {
     opacity: 1;
     transform: scale(1); } }
 
-/*font-family: 'PT Sans', sans-serif;
-font-family: 'Open Sans', sans-serif;*/
+/*font-family: "PT Sans", sans-serif;
+font-family: "Open Sans", sans-serif;*/
 @font-face {
-  font-family: 'Open Sans';
-  src: local("../fonts/Open Sans Regular"), local("OpenSans-Regular"), rl("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-family: "Open Sans";
+  src: local("../fonts/Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   src: local("/fonts/Open Sans Condensed Light"), local("OpenSansCondensed-Light"), url("../fonts/OpenSansCondensed-Light.woff2") format("woff2"), url("../fonts/OpenSansCondensed-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
   src: local("MyriadPro-Regular"), url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
@@ -541,7 +547,7 @@ font-family: 'Open Sans', sans-serif;*/
     margin: 0;
     padding: 0; }
     .header__contacts-list a {
-      font-family: "Open Sans Condensed", 'Arial', sans-serif;
+      font-family: "Open Sans Condensed", "Arial", sans-serif;
       font-size: 43px;
       line-height: 46px;
       font-weight: normal;
@@ -676,7 +682,8 @@ font-family: 'Open Sans', sans-serif;*/
 .catalog__centerblock {
   display: flex;
   flex-direction: column;
-  margin-top: 3px; }
+  margin-top: 3px;
+  width: 100%; }
 
 .catalog__price a {
   box-sizing: border-box;
@@ -844,7 +851,10 @@ font-family: 'Open Sans', sans-serif;*/
   .footer__nav-list {
     list-style: none;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start; }
   .footer__copyright {
     margin-right: 150px; }
   .footer__copyright-text {
@@ -856,10 +866,6 @@ font-family: 'Open Sans', sans-serif;*/
     .footer__email a {
       color: #ffffff;
       letter-spacing: 0.3px; }
-  .footer__nav-list {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start; }
   .footer__nav-item {
     line-height: 26px; }
     .footer__nav-item a {
@@ -898,7 +904,7 @@ font-family: 'Open Sans', sans-serif;*/
   position: fixed;
   padding: 26px 64px;
   width: 468px;
-  top: 228px;
+  top: 128px;
   left: 50%;
   z-index: 2;
   margin-left: -220px;
