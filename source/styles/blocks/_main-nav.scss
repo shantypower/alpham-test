@@ -4,6 +4,7 @@
 
   &__list {
     box-sizing: border-box;
+
     @include list-reset;
     @include margin-auto;
     display: flex;

@@ -16,7 +16,8 @@
     "browser-sync": "^2.18.6",
     "css-mqpacker": "^6.0.1",
     "del": "^2.2.2",
-    "eslint": "^4.11.0",
+    "eslint": "^4.19.1",
+    "eslint-config-htmlacademy": "0.5.2",
     "gulp": "^3.9.1",
     "gulp-csso": "^2.0.0",
     "gulp-image": "^2.8.0",
@@ -28,7 +29,9 @@
     "gulp-sass": "^3.1.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "stylelint": "9.2.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "dependencies": {
     "swiper": "^4.4.2"

@@ -6,6 +6,9 @@
 
   &__nav-list {
     @include list-reset;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
   }
 
   &__copyright {
@@ -20,16 +23,11 @@
 
   &__email {
     margin: 0;
+
     a {
       color: $white;
       letter-spacing: 0.3px;
     }
-  }
-
-  &__nav-list {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
   }
 
   &__nav-item {
