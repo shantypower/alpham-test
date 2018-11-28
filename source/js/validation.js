@@ -1,6 +1,6 @@
 $(document).ready(function () {
   jQuery.validator.setDefaults({
-    debug: true,
+  //  debug: true,
     success: "valid"
   });
 
