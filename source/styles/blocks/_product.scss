@@ -30,10 +30,14 @@
       right: 16px;
       background: url("../img/cart.png");
     }
+
+    &:hover::after {
+      transform: scale(1.3);
+    }
   }
 
   &:hover {
-    transform: scale(1.1);
+    outline: 1px solid $grey;
   }
 
 }

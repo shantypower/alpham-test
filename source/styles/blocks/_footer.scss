@@ -27,6 +27,10 @@
     a {
       color: $white;
       letter-spacing: 0.3px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -39,6 +43,10 @@
       margin-right: auto;
       text-decoration: underline;
       letter-spacing: 0.3px;
+
+      &:hover {
+        color: $grey-dark;
+      }
     }
   }
 
