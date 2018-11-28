@@ -1,5 +1,3 @@
-/*font-family: "PT Sans", sans-serif;
-font-family: "Open Sans", sans-serif;*/
 @font-face {
   font-family: "Open Sans";
   src: local("../fonts/Open Sans Regular"),
@@ -37,16 +35,6 @@ font-family: "Open Sans", sans-serif;*/
     url("../fonts/OpenSans-Bold.woff2") format("woff2"),
     url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans Condensed";
-  src: local("/fonts/Open Sans Condensed Light"),
-    local("OpenSansCondensed-Light"),
-    url("../fonts/OpenSansCondensed-Light.woff2") format("woff2"),
-    url("../fonts/OpenSansCondensed-Light.woff") format("woff");
-  font-weight: 300;
   font-style: normal;
 }
 
