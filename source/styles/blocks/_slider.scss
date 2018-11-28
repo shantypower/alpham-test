@@ -1,16 +1,15 @@
 .slider {
   position: relative;
+
   &__slides {
     @include list-reset;
+    display: flex;
+    align-items: center;
   }
 
   &__slide {
-    min-width: 1400px;
-    min-height: 400px;
-/*
-    &:not(:first-child) {
-      display: none;
-    }*/
+    width: 100%;
+    min-height: 1px;
   }
 
   &__slide img {

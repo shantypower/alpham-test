@@ -14,12 +14,17 @@
     &:nth-child(2n) {
       margin-right: 10px;
     }
+
     a {
       display: block;
       font-family: "PT Sans", "Arial", sans-serif;
       line-height: 16px;
       font-weight: normal;
       color: $grey-light;
+
+      &[href]:hover {
+        color: $grey-dark;
+      }
 
       &[href]::before {
         position: absolute;

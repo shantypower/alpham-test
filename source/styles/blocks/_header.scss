@@ -5,11 +5,15 @@
     @include list-reset;
 
     a {
-      font-family: "Open Sans Condensed", 'Arial', sans-serif;
+      font-family: "Open Sans Condensed", "Arial", sans-serif;
       font-size: 43px;
       line-height: 46px;
       font-weight: normal;
       color: $grey-light;
+
+      &:hover {
+        color: $grey-dark;
+      }
     }
   }
 
@@ -21,6 +25,10 @@
     color: $grey-light;
     letter-spacing: 0.5px;
     border-bottom: 2px dashed $grey-light;
+
+    &:hover {
+      color: $grey-dark;
+    }
   }
 
   &__top {
