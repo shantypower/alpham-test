@@ -28,6 +28,11 @@
     line-height: 18px;
     font-weight: normal;
 
+    &:hover {
+      text-decoration: underline;
+      color: $black;
+    }
+
     &[href] {
       text-decoration: none;
     }

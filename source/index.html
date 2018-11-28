@@ -160,7 +160,7 @@
   <div class="modal">
     <button class="modal__close" aria-label="Закрыть модальное окно"></button>
     <h2 class="modal__title">Обратная связь</h2>
-    <form class="modal__form" action="#" method="post">
+    <form class="modal__form" action="send.php" method="post">
       <label class="modal__label">Ваше имя *<input type="text" class="modal__input" name="name" id="name-field"
           required></label>
       <label class="modal__label">Телефон *<input type="tel" class="modal__input" name="phone" id="phone-field"
@@ -169,7 +169,7 @@
           required></label>
       <label class="modal__label">Сообщение<textarea class="modal__message" name="message" id="message-field" cols="30"
           rows="8"></textarea></label>
-      <input class="modal__submit" type="submit" value="Отправить">
+      <input class="modal__submit" type="submit" name="submit" value="Отправить">
     </form>
   </div>
   <div class="overlay"></div>

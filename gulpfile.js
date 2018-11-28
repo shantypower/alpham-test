@@ -97,7 +97,8 @@ gulp.task("copy", function() {
     "source/img/**/*",
     "source/data/**/*",
     "source/*.html",
-    "source/lib/**/*"
+    "source/lib/**/*",
+    "source/*.php"
   ], {
     base: "source"
   })
