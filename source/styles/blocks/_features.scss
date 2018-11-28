@@ -1,0 +1,18 @@
+.features {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid $grey-light;
+  padding-top: 24px;
+
+  &__item {
+    width: 370px;
+    color: $grey-light;
+    letter-spacing: 0.3px;
+    margin-right: 41px;
+  }
+
+  &__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}

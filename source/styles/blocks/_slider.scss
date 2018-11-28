@@ -1,0 +1,44 @@
+.slider {
+  position: relative;
+  &__slides {
+    @include list-reset;
+  }
+
+  &__slide {
+    min-width: 1400px;
+    min-height: 400px;
+/*
+    &:not(:first-child) {
+      display: none;
+    }*/
+  }
+
+  &__slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__btn {
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 155px;
+    width: 34px;
+    height: 61px;
+    background: url("../img/arrow.png");
+
+    &--left {
+      left: 202px;
+      transform: rotate(180deg);
+    }
+
+    &--right {
+      right: 228px;
+    }
+
+    &:hover {
+      box-shadow: 5px 0 5px rgba(119, 119, 119, 0.5);
+    }
+  }
+}
